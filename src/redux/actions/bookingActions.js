@@ -19,9 +19,9 @@ export const bookCar = (reqObj) => {
             })
             message.success('Your car booked successfully')
 
-            // setTimeout(() => {
-            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/userbookings')
-
+            setTimeout(() => {
+                window.location.href = '/userbookings'
+            }, 500);
             // console.log(reqObj);
         }
         catch (error) {

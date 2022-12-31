@@ -27,9 +27,7 @@ function DefaultLayout(props) {
         {
             key: '3',
             label: (
-                <a href="/admin">
-                    Admin
-                </a>
+                <Link to='/admin'>Admin</Link>
             ),
         },
         {
