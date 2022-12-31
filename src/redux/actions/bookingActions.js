@@ -12,7 +12,7 @@ export const bookCar = (reqObj) => {
 
         try {
             console.log('i am in', reqObj);
-            await axios.post('/api/bookings/bookcar', reqObj);
+            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/bookings/bookcar', reqObj);
             dispatch({
                 type: 'LOADING',
                 payload: false
@@ -47,7 +47,7 @@ export const getAllBookings = () => {
         })
 
         try {
-            const response = await axios.get('/api/bookings/getallbookings')
+            const response = await axios.get('https://car-rental-app-w6w4-api.onrender.com/api/bookings/getallbookings')
             console.log(response);
             dispatch({
                 type: 'GET_ALL_BOOKINGS',

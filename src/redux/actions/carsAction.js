@@ -11,7 +11,8 @@ export const getAllCars = ()=>{
         })
     
         try {
-            const response = await axios.get('/api/cars/getallcars')
+           // const response = await axios.get('/api/cars/getallcars')
+            const response = await axios.get('https://car-rental-app-w6w4-api.onrender.com/api/cars/getallcars')
             console.log(response);
             dispatch({
                 type: 'GET_ALL_CARS',
@@ -50,7 +51,7 @@ export const addCar = (reqObj)=>{
             reqObj.user = user._id;
            
             
-            await axios.post('/api/cars/addcar', reqObj)
+            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/cars/addcar', reqObj)
             
             dispatch({
                 type: 'LOADING',
@@ -86,7 +87,7 @@ export const editCar = (reqObj)=>{
         try {   
            
             
-            await axios.post('/api/cars/editcar', reqObj)
+            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/cars/editcar', reqObj)
             
             dispatch({
                 type: 'LOADING',
@@ -122,7 +123,7 @@ export const deleteCar = (reqObj)=>{
         try {   
            
             
-            await axios.post('/api/cars/deletecar', reqObj)
+            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/cars/deletecar', reqObj)
             
             dispatch({
                 type: 'LOADING',

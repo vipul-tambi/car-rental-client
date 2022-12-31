@@ -12,7 +12,7 @@ export const userLogin = (reqObj) => {
         })
 
         try {
-            const response = await axios.post('/api/users/login', reqObj)
+            const response = await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/users/login', reqObj)
             message.success('Login success')
             setTimeout(() => {
                 window.location.href = '/'
@@ -46,7 +46,7 @@ export const userRegister = (reqObj) => {
         })
 
         try {
-            await axios.post('/api/users/register', reqObj)
+            await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/users/register', reqObj)
             message.success('Registraction successfull');
             setTimeout(() => {
                 window.location.href = '/login'
