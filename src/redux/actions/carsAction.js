@@ -1,6 +1,6 @@
 import { message } from 'antd';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 export const getAllCars = ()=>{
     return async dispatch => {
         
@@ -59,7 +59,7 @@ export const addCar = (reqObj)=>{
             })
             message.success('New car added successfully');
             setTimeout(() => {
-                window.location.href='/admin'
+                window.location.Link='/userbookings';
             }, 500);
         }
         catch (error) {

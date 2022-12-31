@@ -11,17 +11,14 @@ function DefaultLayout(props) {
         {
             key: '1',
             label: (
-                <a href="/">
-                    Home
-                </a>
+                <Link to='/'>Home</Link>
             ),
         },
         {
             key: '2',
             label: (
-                <a href="/userbookings">
-                    Bookings
-                </a>
+                <Link to='/userbookings'>Bookings</Link>
+
             ),
         },
         {
@@ -33,13 +30,13 @@ function DefaultLayout(props) {
         {
             key: '4',
             label: (
-                <a onClick={() => {
+                <Link onClick={() => {
                     localStorage.removeItem('user');
-                    window.location.href = '/login'
+                    window.location.to = '/login'
                 }
                 } >
                     Logout
-                </a>
+                </Link>
             ),
         },
     ]
