@@ -23,7 +23,7 @@ function App() {
           <Route exact path='/userbookings' element={<Protect> <UserBookings /> </Protect>} />
           <Route exact path='/addcar' element={<Protect> <AddCar /> </Protect>} />
           <Route exact path='/editcar/:carid' element={<Protect> <EditCar /> </Protect>} />
-          <Route exact path='/admin' element={<Protect> <AdminHome /> </Protect>} />
+          <Route path='/admin' element={<Protect> <AdminHome /> </Protect>} />
         </Routes>
       </Router>
     </div>
