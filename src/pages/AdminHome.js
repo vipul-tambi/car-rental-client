@@ -36,7 +36,7 @@ function AdminHome() {
                 <Col lg={20} sm={24}>
                     <div className='d-flex align-items-center justify-content-between'>
                         <h3 className='mt-1 mr-2'>Admin panel</h3>
-                        <button className='btn1 mt-2' ><a href='/addcar'>ADD CAR</a></button>
+                        <button className='btn1 mt-2' ><Link to='/addcar'>ADD CAR</Link></button>
                     </div>
                 </Col>
             </Row>

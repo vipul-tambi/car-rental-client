@@ -26,9 +26,9 @@ function UserBookings() {
                     {bookings.filter(o => o.user === user._id).map((booking, index) => {
                         return <Row gutter={16} className="bs1 m-3 " key={index} >
                             <Col lg={6} sm={24} style={{ textAlign: "left" }}>
-                                <p><b>{booking.car.name}</b></p>
+                                {/* <p><b>{booking.car.name}</b></p>
                                 <p>Total hours :{booking.car.totalHours}</p>
-                                <p>Rent per hour :{booking.car.rentPerHour} /-</p>
+                                <p>Rent per hour :{booking.car.rentPerHour} /-</p> */}
                                 <p>Total amount :{booking.totalAmount}</p>
                             </Col>
 
@@ -39,9 +39,9 @@ function UserBookings() {
                                 <p>Date of booking: <b>{moment(booking.createdAt).format('MMM DD yyyy')}</b></p>
                             </Col>
 
-                            <Col lg={6} sm={24} style={{ textAlign: "right" }} >
+                            {/* <Col lg={6} sm={24} style={{ textAlign: "right" }} >
                                 <img style={{ borderRedius: 5 }} alt="carimg" src={booking.car.image} height='140' className="p-2" />
-                            </Col>
+                            </Col> */}
                         </Row>
                     })}
 
@@ -52,4 +52,3 @@ function UserBookings() {
 }
 
 export default UserBookings;
-

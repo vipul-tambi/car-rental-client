@@ -20,7 +20,7 @@ export const bookCar = (reqObj) => {
             message.success('Your car booked successfully')
 
             setTimeout(() => {
-                window.location.href = '/userbookings'
+                window.location = '/userbookings'
             }, 500);
             // console.log(reqObj);
         }

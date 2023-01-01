@@ -11,7 +11,7 @@ function DefaultLayout(props) {
         {
             key: '1',
             label: (
-                <Link to='/'>Home</Link>
+                <a href='/'>Home</a>
             ),
         },
         {
@@ -32,7 +32,7 @@ function DefaultLayout(props) {
             label: (
                 <Link onClick={() => {
                     localStorage.removeItem('user');
-                    window.location.to = '/login'
+                    window.location = '/login'
                 }
                 } >
                     Logout

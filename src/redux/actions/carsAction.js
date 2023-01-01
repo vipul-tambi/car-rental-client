@@ -59,7 +59,7 @@ export const addCar = (reqObj)=>{
             })
             message.success('New car added successfully');
             setTimeout(() => {
-                window.location.Link='/userbookings';
+                window.location='/userbookings';
             }, 500);
         }
         catch (error) {
@@ -95,7 +95,7 @@ export const editCar = (reqObj)=>{
             })
             message.success('Car details updated successfully');
             setTimeout(() => {
-                window.location.href='/admin'
+                window.location='/admin'
             }, 500);
         }
         catch (error) {

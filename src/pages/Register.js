@@ -24,6 +24,7 @@ function Register1() {
     const { loading } = useSelector(state => state.alertsReducer);
 
     function onFinish(values) {
+        // values.preventDefault();
         if (values.password === values.cpassword) {
             dispatch(userRegister(values))
         }
