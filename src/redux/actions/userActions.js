@@ -1,5 +1,6 @@
 import { message } from 'antd';
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 
 
 export const userLogin = (reqObj) => {
@@ -49,7 +50,8 @@ export const userRegister = (reqObj) => {
             await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/users/register', reqObj)
             message.success('Registraction successfull');
             setTimeout(() => {
-                window.location = '/login'
+                window.location.href = './login'
+
             }, 500);
 
             dispatch({

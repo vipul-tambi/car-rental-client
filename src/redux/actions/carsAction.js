@@ -59,7 +59,7 @@ export const addCar = (reqObj)=>{
             })
             message.success('New car added successfully');
             setTimeout(() => {
-                window.location='/userbookings';
+                window.location='/admin';
             }, 500);
         }
         catch (error) {
