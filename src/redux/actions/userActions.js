@@ -38,6 +38,7 @@ export const userLogin = (reqObj) => {
 }
 
 export const userRegister = (reqObj) => {
+    var link = 'https://car-rental-app-w6w4.onrender.com/login'
     return async dispatch => {
 
         dispatch({
@@ -50,7 +51,8 @@ export const userRegister = (reqObj) => {
             await axios.post('https://car-rental-app-w6w4-api.onrender.com/api/users/register', reqObj)
             message.success('Registraction successfull');
             setTimeout(() => {
-                window.location.href = 'https://car-rental-app-w6w4.onrender.com/login'
+
+                window.location.href = link
 
             }, 500);
 
